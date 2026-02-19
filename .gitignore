@@ -1,0 +1,52 @@
+[Bb]in/
+[Oo]bj/
+[Pp]ublish/
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.doccache
+
+# Build outputs
+build/
+dist/
+publish_installer/
+app_fixes/
+app_structure/
+SynkrFox_App/
+
+# Executables and Zips
+*.exe
+*.zip
+*.msi
+*.msix
+
+# Exception: Keep the ones we just made if you really want them in git, 
+# but usually installers/zips don't go in git.
+# I'll leave them ignored for a clean repo.
+# If you want to force them in, you can 'git add -f' them.
+
+# Icons/Images (keep sources, ignore individual export junk if desired)
+# New*
+New folder*/
+"New Bitmap image.bmp"
+"New Text Document*.txt"
+"unnamed*.jpg"
+icon_*.png
+icon_*.jpg
+i128*.png
+i16*.png
+i256*.png
+i32*.png
+i48*.png
+i64*.png
+s128*.png
+s16*.png
+s256*.png
+s32*.png
+s48*.png
+s64*.png
+
+# Script itself
+# upload.bat

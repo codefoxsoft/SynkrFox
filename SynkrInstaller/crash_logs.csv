@@ -1,0 +1,202 @@
+#TYPE Selected.System.Diagnostics.Eventing.Reader.EventLogRecord
+"TimeCreated","Message"
+"2/11/2026 6:20:43 PM","Faulting application name: installer.exe, version: 1.0.0.0, time stamp: 0x68d5984a
+Faulting module name: KERNELBASE.dll, version: 10.0.26100.7623, time stamp: 0x45ad608f
+Exception code: 0xe0434352
+Fault offset: 0x00000000000ca80a
+Faulting process id: 0x5CD8
+Faulting application start time: 0x1DC9BBDCEB7A2F2
+Faulting application path: C:\Users\psych\Documents\PROGRAMMING\FoxSynk\installer.exe
+Faulting module path: C:\WINDOWS\System32\KERNELBASE.dll
+Report Id: 6d5fe634-7fdc-4b1c-b9f9-fac699ca20df
+Faulting package full name: 
+Faulting package-relative application ID: "
+"2/11/2026 6:20:43 PM","Application: installer.exe
+CoreCLR Version: 9.0.1025.47515
+.NET Version: 9.0.10
+Description: The process was terminated due to an unhandled exception.
+Exception Info: System.Windows.Markup.XamlParseException: Provide value on 'System.Windows.Baml2006.TypeConverterMarkupExtension' threw an exception.
+ ---> System.IO.IOException: Cannot locate resource 'resources/icon.jpg'.
+   at MS.Internal.AppModel.ResourcePart.GetStreamCore(FileMode mode, FileAccess access)
+   at System.IO.Packaging.PackagePart.GetStream(FileMode mode, FileAccess access)
+   at MS.Internal.IO.Packaging.PackagePartExtensions.GetSeekableStream(PackagePart packPart, FileMode mode, FileAccess access)
+   at System.IO.Packaging.PackWebResponse.CachedResponse.GetResponseStream()
+   at System.Windows.Media.Imaging.BitmapDecoder.SetupDecoderFromUriOrStream(Uri uri, Stream stream, BitmapCacheOption cacheOption, Guid& clsId, Boolean& isOriginalWritable, Stream& uriStream, UnmanagedMemoryStream& unmanagedMemoryStream, SafeFileHandle& safeFilehandle)
+   at System.Windows.Media.Imaging.BitmapDecoder.CreateFromUriOrStream(Uri baseUri, Uri uri, Stream stream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption, RequestCachePolicy uriCachePolicy, Boolean insertInDecoderCache)
+   at System.Windows.Media.Imaging.BitmapFrame.CreateFromUriOrStream(Uri baseUri, Uri uri, Stream stream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption, RequestCachePolicy uriCachePolicy)
+   at System.Windows.Media.ImageSourceConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+   at MS.Internal.Xaml.Runtime.ClrObjectRuntime.CallProvideValue(MarkupExtension me, IServiceProvider serviceProvider)
+   --- End of inner exception stack trace ---
+   at System.Windows.Markup.XamlReader.RewrapException(Exception e, IXamlLineInfo lineInfo, Uri baseUri)
+   at System.Windows.Markup.WpfXamlLoader.Load(XamlReader xamlReader, IXamlObjectWriterFactory writerFactory, Boolean skipJournaledProperties, Object rootObject, XamlObjectWriterSettings settings, Uri baseUri)
+   at System.Windows.Markup.WpfXamlLoader.LoadBaml(XamlReader xamlReader, Boolean skipJournaledProperties, Object rootObject, XamlAccessLevel accessLevel, Uri baseUri)
+   at System.Windows.Markup.XamlReader.LoadBaml(Stream stream, ParserContext parserContext, Object parent, Boolean closeStream)
+   at System.Windows.Application.LoadBamlStreamWithSyncInfo(Stream stream, ParserContext pc)
+   at System.Windows.Application.DoStartup()
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.DispatcherOperation.InvokeImpl()
+   at MS.Internal.CulturePreservingExecutionContext.CallbackWrapper(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at MS.Internal.CulturePreservingExecutionContext.Run(CulturePreservingExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Windows.Threading.DispatcherOperation.Invoke()
+   at System.Windows.Threading.Dispatcher.ProcessQueue()
+   at System.Windows.Threading.Dispatcher.WndProcHook(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   at System.Windows.Threading.Dispatcher.Invoke(DispatcherPriority priority, Delegate method, Object arg)
+   at MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   at System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   at System.Windows.Application.RunDispatcher(Object ignore)
+   at System.Windows.Application.RunInternal(Window window)
+   at SynkrInstaller.App.Main()
+"
+"2/11/2026 6:20:35 PM","Faulting application name: installer.exe, version: 1.0.0.0, time stamp: 0x68d5984a
+Faulting module name: KERNELBASE.dll, version: 10.0.26100.7623, time stamp: 0x45ad608f
+Exception code: 0xe0434352
+Fault offset: 0x00000000000ca80a
+Faulting process id: 0x2CD0
+Faulting application start time: 0x1DC9BBDC963326A
+Faulting application path: C:\Users\psych\Documents\PROGRAMMING\FoxSynk\installer.exe
+Faulting module path: C:\WINDOWS\System32\KERNELBASE.dll
+Report Id: e9f9091e-687c-4e94-a76f-7525db8cc5c0
+Faulting package full name: 
+Faulting package-relative application ID: "
+"2/11/2026 6:20:35 PM","Application: installer.exe
+CoreCLR Version: 9.0.1025.47515
+.NET Version: 9.0.10
+Description: The process was terminated due to an unhandled exception.
+Exception Info: System.Windows.Markup.XamlParseException: Provide value on 'System.Windows.Baml2006.TypeConverterMarkupExtension' threw an exception.
+ ---> System.IO.IOException: Cannot locate resource 'resources/icon.jpg'.
+   at MS.Internal.AppModel.ResourcePart.GetStreamCore(FileMode mode, FileAccess access)
+   at System.IO.Packaging.PackagePart.GetStream(FileMode mode, FileAccess access)
+   at MS.Internal.IO.Packaging.PackagePartExtensions.GetSeekableStream(PackagePart packPart, FileMode mode, FileAccess access)
+   at System.IO.Packaging.PackWebResponse.CachedResponse.GetResponseStream()
+   at System.Windows.Media.Imaging.BitmapDecoder.SetupDecoderFromUriOrStream(Uri uri, Stream stream, BitmapCacheOption cacheOption, Guid& clsId, Boolean& isOriginalWritable, Stream& uriStream, UnmanagedMemoryStream& unmanagedMemoryStream, SafeFileHandle& safeFilehandle)
+   at System.Windows.Media.Imaging.BitmapDecoder.CreateFromUriOrStream(Uri baseUri, Uri uri, Stream stream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption, RequestCachePolicy uriCachePolicy, Boolean insertInDecoderCache)
+   at System.Windows.Media.Imaging.BitmapFrame.CreateFromUriOrStream(Uri baseUri, Uri uri, Stream stream, BitmapCreateOptions createOptions, BitmapCacheOption cacheOption, RequestCachePolicy uriCachePolicy)
+   at System.Windows.Media.ImageSourceConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+   at MS.Internal.Xaml.Runtime.ClrObjectRuntime.CallProvideValue(MarkupExtension me, IServiceProvider serviceProvider)
+   --- End of inner exception stack trace ---
+   at System.Windows.Markup.XamlReader.RewrapException(Exception e, IXamlLineInfo lineInfo, Uri baseUri)
+   at System.Windows.Markup.WpfXamlLoader.Load(XamlReader xamlReader, IXamlObjectWriterFactory writerFactory, Boolean skipJournaledProperties, Object rootObject, XamlObjectWriterSettings settings, Uri baseUri)
+   at System.Windows.Markup.WpfXamlLoader.LoadBaml(XamlReader xamlReader, Boolean skipJournaledProperties, Object rootObject, XamlAccessLevel accessLevel, Uri baseUri)
+   at System.Windows.Markup.XamlReader.LoadBaml(Stream stream, ParserContext parserContext, Object parent, Boolean closeStream)
+   at System.Windows.Application.LoadBamlStreamWithSyncInfo(Stream stream, ParserContext pc)
+   at System.Windows.Application.DoStartup()
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.DispatcherOperation.InvokeImpl()
+   at MS.Internal.CulturePreservingExecutionContext.CallbackWrapper(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at MS.Internal.CulturePreservingExecutionContext.Run(CulturePreservingExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Windows.Threading.DispatcherOperation.Invoke()
+   at System.Windows.Threading.Dispatcher.ProcessQueue()
+   at System.Windows.Threading.Dispatcher.WndProcHook(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   at System.Windows.Threading.Dispatcher.Invoke(DispatcherPriority priority, Delegate method, Object arg)
+   at MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   at MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   at System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   at System.Windows.Application.RunDispatcher(Object ignore)
+   at System.Windows.Application.RunInternal(Window window)
+   at SynkrInstaller.App.Main()
+"
+"2/11/2026 6:03:43 PM","Faulting application name: installer.exe, version: 1.0.0.0, time stamp: 0x68d5984a
+Faulting module name: KERNELBASE.dll, version: 10.0.26100.7623, time stamp: 0x45ad608f
+Exception code: 0xe0434352
+Fault offset: 0x00000000000ca80a
+Faulting process id: 0x5D98
+Faulting application start time: 0x1DC9BBB6EC4B33E
+Faulting application path: C:\Users\psych\Documents\PROGRAMMING\FoxSynk\installer.exe
+Faulting module path: C:\WINDOWS\System32\KERNELBASE.dll
+Report Id: 1d1a4091-42f6-481e-9875-7d6f9f3c98b8
+Faulting package full name: 
+Faulting package-relative application ID: "
+"2/11/2026 6:03:43 PM","Application: installer.exe
+CoreCLR Version: 9.0.1025.47515
+.NET Version: 9.0.10
+Description: The process was terminated due to an unhandled exception.
+Exception Info: System.DllNotFoundException: Dll was not found.
+   at MS.Internal.WindowsBase.NativeMethodsSetLastError.SetWindowLongPtrWndProc(HandleRef hWnd, Int32 nIndex, WndProc dwNewLong)
+   at MS.Win32.UnsafeNativeMethods.CriticalSetWindowLong(HandleRef hWnd, Int32 nIndex, WndProc dwNewLong)
+   at MS.Win32.HwndSubclass.HookWindowProc(IntPtr hwnd, WndProc newWndProc, IntPtr oldWndProc)
+   at MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+"
+"2/11/2026 6:03:33 PM","Faulting application name: installer.exe, version: 1.0.0.0, time stamp: 0x68d5984a
+Faulting module name: KERNELBASE.dll, version: 10.0.26100.7623, time stamp: 0x45ad608f
+Exception code: 0xe0434352
+Fault offset: 0x00000000000ca80a
+Faulting process id: 0x4B08
+Faulting application start time: 0x1DC9BBB68F42C8F
+Faulting application path: C:\Users\psych\Documents\PROGRAMMING\FoxSynk\installer.exe
+Faulting module path: C:\WINDOWS\System32\KERNELBASE.dll
+Report Id: a5a36430-928e-4bfc-9d97-81ee096c8951
+Faulting package full name: 
+Faulting package-relative application ID: "
+"2/11/2026 6:03:33 PM","Application: installer.exe
+CoreCLR Version: 9.0.1025.47515
+.NET Version: 9.0.10
+Description: The process was terminated due to an unhandled exception.
+Exception Info: System.DllNotFoundException: Dll was not found.
+   at MS.Internal.WindowsBase.NativeMethodsSetLastError.SetWindowLongPtrWndProc(HandleRef hWnd, Int32 nIndex, WndProc dwNewLong)
+   at MS.Win32.UnsafeNativeMethods.CriticalSetWindowLong(HandleRef hWnd, Int32 nIndex, WndProc dwNewLong)
+   at MS.Win32.HwndSubclass.HookWindowProc(IntPtr hwnd, WndProc newWndProc, IntPtr oldWndProc)
+   at MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+"
+"2/11/2026 6:03:24 PM","Faulting application name: installer.exe, version: 1.0.0.0, time stamp: 0x68d5984a
+Faulting module name: KERNELBASE.dll, version: 10.0.26100.7623, time stamp: 0x45ad608f
+Exception code: 0xe0434352
+Fault offset: 0x00000000000ca80a
+Faulting process id: 0x5FBC
+Faulting application start time: 0x1DC9BBB634AAA9C
+Faulting application path: C:\Users\psych\Documents\PROGRAMMING\FoxSynk\installer.exe
+Faulting module path: C:\WINDOWS\System32\KERNELBASE.dll
+Report Id: bb280ebe-c1c8-40d5-8ab2-1e7303aae866
+Faulting package full name: 
+Faulting package-relative application ID: "
+"2/11/2026 6:03:24 PM","Application: installer.exe
+CoreCLR Version: 9.0.1025.47515
+.NET Version: 9.0.10
+Description: The process was terminated due to an unhandled exception.
+Exception Info: System.DllNotFoundException: Dll was not found.
+   at MS.Internal.WindowsBase.NativeMethodsSetLastError.SetWindowLongPtrWndProc(HandleRef hWnd, Int32 nIndex, WndProc dwNewLong)
+   at MS.Win32.UnsafeNativeMethods.CriticalSetWindowLong(HandleRef hWnd, Int32 nIndex, WndProc dwNewLong)
+   at MS.Win32.HwndSubclass.HookWindowProc(IntPtr hwnd, WndProc newWndProc, IntPtr oldWndProc)
+   at MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+"
+"2/11/2026 6:03:16 PM","Faulting application name: installer.exe, version: 1.0.0.0, time stamp: 0x68d5984a
+Faulting module name: KERNELBASE.dll, version: 10.0.26100.7623, time stamp: 0x45ad608f
+Exception code: 0xe0434352
+Fault offset: 0x00000000000ca80a
+Faulting process id: 0x6210
+Faulting application start time: 0x1DC9BBB5E9D46E3
+Faulting application path: C:\Users\psych\Documents\PROGRAMMING\FoxSynk\installer.exe
+Faulting module path: C:\WINDOWS\System32\KERNELBASE.dll
+Report Id: 95c06c50-eab9-4c52-a46d-65e4c917aa4e
+Faulting package full name: 
+Faulting package-relative application ID: "
+"2/11/2026 6:03:16 PM","Application: installer.exe
+CoreCLR Version: 9.0.1025.47515
+.NET Version: 9.0.10
+Description: The process was terminated due to an unhandled exception.
+Exception Info: System.DllNotFoundException: Dll was not found.
+   at MS.Internal.WindowsBase.NativeMethodsSetLastError.SetWindowLongPtrWndProc(HandleRef hWnd, Int32 nIndex, WndProc dwNewLong)
+   at MS.Win32.UnsafeNativeMethods.CriticalSetWindowLong(HandleRef hWnd, Int32 nIndex, WndProc dwNewLong)
+   at MS.Win32.HwndSubclass.HookWindowProc(IntPtr hwnd, WndProc newWndProc, IntPtr oldWndProc)
+   at MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+"
